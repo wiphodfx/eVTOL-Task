@@ -1,0 +1,1 @@
+The goal of this project is to research and develop new forms of transportation that are more sustainable, efficient and equitable than current systems.
