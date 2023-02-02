@@ -14,8 +14,10 @@
   background: #7e9c57;
   width: 100%;
   height: 100vh; 
+  position: relative;
     
 }
+/* -------------------NAVIGATION BAR STYLING----------------------- */
 .header nav {
     display: flex;
     align-items: center;
@@ -65,8 +67,6 @@ nav .nav-links li a {
     font-size: 18px;
 }
 
-
-
 .header button {
     padding: 10px 20px;
     border-radius: 4px;
@@ -83,4 +83,59 @@ nav .nav-links li a {
     border: 1px solid #7e9c57;
     color: #7e9c57;
     border-radius: 4px;
+}
+
+/* --------------------------------------------HEADER INTRODUCTION SECTION------------------------------------------------------ */
+.introduction{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 8%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.introduction .head-img{
+    flex-basis: 800px;
+    padding: 40px 8%;
+}
+
+.introduction .head-img img {
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+}
+.introduction .intro-text{
+    flex: 1;
+}
+
+.introduction .intro-text h1{
+    font-size: 35px;
+    color: #fff;
+    /* width: 750px; */
+}
+
+.introduction .intro-text h1 span{
+    font-size: 80px;
+    color: yellow;
+    font-weight: 600;
+}
+.introduction .intro-text p{
+    font-size: 30px;
+    color: yellow;
+    margin-top: 20px;
+}
+
+.introduction .booking-form{
+    max-width: 1200px;
+    width: 600px;
+    background: #fff;
+    padding: 5px 8px;
+}
+
+.booking-form input{
+    width: 100%;
 }
