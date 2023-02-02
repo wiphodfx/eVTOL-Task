@@ -146,10 +146,32 @@ nav .nav-links li:hover a{
 .introduction .booking-form{
     max-width: 1200px;
     width: 600px;
-    background: #fff;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4)50%, rgba(0, 0, 0, 0.4)50%);
     padding: 5px 8px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 50px;
 }
 
+.booking-form label{
+    color: #fff;
+}
+
+.booking-form h2{
+    color: #fff;
+    margin-bottom: 10px;
+}
 .booking-form input{
     width: 100%;
+    padding: 10px 20px;
+}
+
+.booking-form textarea{
+    width: 100%;
+    margin-top: 8px;
+}
+
+.booking-form button {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7)50%, rgba(0, 0, 0, 0.7)50%);
+    cursor: pointer;
 }
