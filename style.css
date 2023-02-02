@@ -218,7 +218,7 @@ nav .nav-links li:hover a{
 
 .bookings .tickets{
     width: 100%;
-    padding: 50px 8%;
+    padding: 70px 8%;
 }
 
 .bookings .tickets h3{
@@ -227,9 +227,67 @@ nav .nav-links li:hover a{
     color: #fff;
 }
 fieldset{
-    max-width: 700px;
+    max-width: 900px;
+    padding: 3%;
+    border: 2px solid #fff;
+    border-radius: 8px;
 }
 .tickets .booking{
-    height: 600px;
-    width: 600px;
+    height: 300px;
+    width: 800px;
+}
+
+.booking label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    margin-right: 12px;
+}
+
+#pCode, #day, #date{
+    padding: 10px 30px;
+    width: 260px;
+    outline: 0;
+    border: 0;
+    margin-right: 10px;
+}
+
+.booking input::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+#timer{
+    padding: 10px 10px;
+    width: 40px;
+    height: 40px;
+    outline: 0;
+    border: 0;
+}
+
+#message{
+    width: 380px;
+    padding: 10px 30px;
+    border: 0;
+    outline: 0;
+}
+
+.booking button {
+    padding: 10px 14px;
+    border-radius: 4px;
+    outline: 0;
+    border: 0;
+}
+
+.booking .submit-btn{
+    padding: 12px 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    background: yellow;
+    color: #0059ff;
+    margin-left: 20px;
 }
