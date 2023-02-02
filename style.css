@@ -31,7 +31,7 @@
 .header nav .nav-logo{
     width: 80px;
     height: 80px;
-    border: 8px solid #7e9c57;
+    border: 8px solid #bedf92;
     border-radius: 50%;
     box-shadow: 0 5px 10px rgba(0, 0 , 0, 0.22);
 
@@ -45,6 +45,7 @@ nav .nav-links li{
     display: inline-block;
     padding: 0 10px;
     list-style: none;
+    transition: color 0.4s;
 }
 
 nav .nav-links li a {
@@ -54,17 +55,26 @@ nav .nav-links li a {
     color: #7e9c57;
 }
 
+nav .nav-links li:hover a{
+    color: #bedf92;
+}
+
 .toll-line{
     display: flex;
     align-items: center;
     line-height: 15px;
     font-size: 12px;
     color: #7e9c57;
+    transition: color 0.4s;
 }
 
 .toll-line .fa-phone-volume{
     margin-right: 8px;
     font-size: 18px;
+}
+
+.toll-line:hover{
+    color: #bedf92;
 }
 
 .header button {
@@ -101,12 +111,14 @@ nav .nav-links li a {
 .introduction .head-img{
     flex-basis: 800px;
     padding: 40px 8%;
+    transform: translate(2.5);
 }
 
 .introduction .head-img img {
     width: 100%;
     height: fit-content;
     margin: auto;
+    
 }
 .introduction .intro-text{
     flex: 1;
@@ -124,7 +136,7 @@ nav .nav-links li a {
     font-weight: 600;
 }
 .introduction .intro-text p{
-    font-size: 30px;
+    font-size: 25px;
     color: yellow;
     margin-top: 20px;
 }
