@@ -183,6 +183,11 @@ nav .nav-links li:hover a{
     font-weight: 500;
 }
 
+.contact_form input:focus, .contact_form textarea:focus {
+    border: 1px solid #fff;
+    transform: all 0.14s ease;
+}
+
 .contact_form input::placeholder, .contact_form textarea::placeholder{
     color: #fff;
     font-weight: 500;
@@ -271,6 +276,10 @@ nav .nav-links li:hover a{
     margin: 2%;
     display: inline-block;
 }
+
+/* .bookingForm form .input_field input:focus{
+    border: 1px solid #bedf92;
+} */
 
 .bookingForm form .input_field .custom-select{
     display: flex;
