@@ -147,9 +147,8 @@ nav .nav-links li:hover a{
     font-weight: 500;
 }
 
-.introduction .booking-form{
-    max-width: 1000px;
-    
+.introduction .contact_form{
+    max-width:800px;
     width: 600px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.4)50%, rgba(0, 0, 0, 0.4)50%);
     padding: 5px 8px;
@@ -161,18 +160,20 @@ nav .nav-links li:hover a{
     align-items: center;
     justify-content: center;
     text-align: left;
+    padding: 30px;
 }
 
-.booking-form label{
+.contact_form label{
     color: #fff;
     text-align: left;
 }
 
-.booking-form h2{
+.contact_form h2{
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
-.booking-form input{
+.contact_form input{
     width: 100%;
     padding: 10px 10px;
     border: 0;
@@ -182,15 +183,13 @@ nav .nav-links li:hover a{
     font-weight: 500;
 }
 
-.booking-form input::placeholder, .booking-form textarea::placeholder{
+.contact_form input::placeholder, .contact_form textarea::placeholder{
     color: #fff;
     font-weight: 500;
     font-size: 15px;
 }
 
-.booking-form textarea{
-    width: 100%;
-    max-height: 500px;
+.contact_form textarea{
     margin-top: 8px;
     outline: 0;
     border: 0;
@@ -201,93 +200,135 @@ nav .nav-links li:hover a{
     font-weight: 500;
 }
 
-.booking-form button {
+.contact_form button {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.7)50%, rgba(0, 0, 0, 0.7)50%);
     cursor: pointer;
     width: 50%;
-    margin: 20px 0;
+    margin: 10px 0;
 }
+
+.contact_form textarea{
+    width: 100%;
+    height: 250px;
+}
+
+.contact_form textarea {
+    resize: none;
+}
+
 
 /* ---------------------------Booking Ticket------------------------- */
 
 .bookings{
     width: 100%;
-    /* height: 60vh; */
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.4)50%, rgba(0, 0, 0, 0.4)50%);
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.22)50%, rgba(0, 0, 0, 0.22)50%), url(images/2020-volocity-side.png);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
 }
 
-.bookings .tickets{
+.bookings .bookings-wrapper{
+    width: 800px;
+    padding: 50px;
+    background-color: #000000c9;
+    position: absolute;
+    top: 20%;
+    border-radius: 0 40px 0 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bookings .bookings-wrapper .bookingForm{
     width: 100%;
-    padding: 70px 8%;
+    padding: 10px;
 }
 
-.bookings .tickets h3{
+.bookings-wrapper .title{
+    margin: 20px auto;
     font-size: 30px;
-    font-weight: 600;
+    color: #fff;
+    border-bottom: 2px solid #eef1f5;
+}
+
+.bookingForm form .input_field {
+    display: flex;
+    align-items: center;
+}
+
+.bookingForm form .input_field label {
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 500;
     color: #fff;
 }
-fieldset{
-    max-width: 850px;
-    padding: 3%;
-    border: 2px solid #fff;
-    border-radius: 8px;
+
+.bookingForm form .input_field input{
+    width: 45%;
+    outline: 0;
+    border: none;
+    padding: 10px;
+    margin: 2%;
+    display: inline-block;
 }
-.tickets .booking{
-    height: 300px;
+
+.bookingForm form .input_field .custom-select{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+.bookingForm form .input_field .custom-select select{
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    margin-right: 2%;
+}
+
+.bookingForm form .input_field .custom-select .first-select{
+    width: 100%;
+    margin-left: 8px;
+}
+
+.bookingForm form .input_field .custom-select select option{
     width: 800px;
 }
 
-.booking label {
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-    margin-right: 12px;
-}
-
-#pCode, #day, #date{
-    padding: 10px 30px;
-    width: 260px;
-    outline: 0;
+.custom-select button{
+    padding: 5px 9px;
+    margin: 2%;
+    border-radius: 3px;
     border: 0;
-    margin-right: 10px;
+    outline: 0;
 }
 
-.booking input::placeholder{
-    font-size: 16px;
+.custom-select button a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.input_field .custom-select .go-btn{
+    font-size: 18px;
+    padding: 8px 13px;
     font-weight: 500;
-    color: #000;
 }
 
-#timer{
-    padding: 10px 10px;
+.custom-select .fArilift {
+    width: 60%;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: -50px;
+}
+
+.custom-select input[type="chekbox"]{
     width: 40px;
     height: 40px;
-    outline: 0;
-    border: 0;
+    background: #fff;
 }
 
-#message{
-    width: 380px;
-    padding: 10px 30px;
-    border: 0;
-    outline: 0;
-}
+form .reset-link {
+    color: #fff;
+    margin-top: 20px;
 
-.booking button {
-    padding: 10px 14px;
-    border-radius: 4px;
-    outline: 0;
-    border: 0;
-}
-
-.booking .submit-btn{
-    padding: 12px 20px;
-    outline: 0;
-    border: 0;
-    border-radius: 4px;
-    font-size: 18px;
-    font-weight: 600;
-    background: yellow;
-    color: #0059ff;
-    margin-left: 20px;
 }
