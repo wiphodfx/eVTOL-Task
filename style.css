@@ -232,6 +232,7 @@ nav .nav-links li:hover a{
     background-position: center;
     padding: 0 8%;
     position: relative;
+    float: left;
 }
 
 .bookings .bookings-wrapper{
