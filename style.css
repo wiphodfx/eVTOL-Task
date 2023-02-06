@@ -145,8 +145,9 @@ nav .nav-links li:hover a {
 }
 
 .introduction .contact_form {
-  max-width: 800px;
-  width: 600px;
+  max-width: 500px;
+  width: 100%;
+  height: 550px;
   background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.4) 50%,
@@ -234,6 +235,36 @@ nav .nav-links li:hover a {
 
 .contact_form textarea {
   resize: none;
+}
+
+/* ------------------------------------Gallery------------------------------------ */
+.flight-gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #eef1f5;
+}
+
+.flight-gallery .row-gallery {
+  width: 100%;
+  padding: 0 8%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #bbb;
+}
+
+.flight-gallery .flight-col,
+.flight-gallery .flight_desc {
+  flex: 1;
+  margin: 20px 0;
+}
+
+.row-gallery .flight-col img {
+  width: 80%;
 }
 
 /* ---------------------------Booking Ticket------------------------- */
