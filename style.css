@@ -1,344 +1,369 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", "Roboto", sans-serif;
 }
 
 /* body{
     background-color: #000;
 } */
 
-.header{
-  background: linear-gradient(rgba(0, 0, 0, 0.22)50%, rgba(0, 0, 0, 0.22)50%), url(images/honda-evtol-hybrid-aircraft-concept.jpg);
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.22) 50%, rgba(0, 0, 0, 0.22) 50%),
+    url(images/honda-evtol-hybrid-aircraft-concept.jpg);
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   position: relative;
   background-position: center;
   background-size: cover;
-    
 }
 /* -------------------NAVIGATION BAR STYLING----------------------- */
 .header nav {
-    display: flex;
-    align-items: center;
-    line-height: 70px;
-    justify-content: space-between;
-    padding: 10px 8%;
-    background: #fff;
-    border-bottom: 1px solid #bbb;
+  display: flex;
+  align-items: center;
+  line-height: 70px;
+  justify-content: space-between;
+  padding: 10px 8%;
+  background: #fff;
+  border-bottom: 1px solid #bbb;
 }
 
-.header nav .nav-logo{
-    width: 80px;
-    height: 80px;
-    border: 8px solid #000000c9;
-    border-radius: 50%;
-    box-shadow: 0 5px 10px rgba(0, 0 , 0, 0.22);
-
+.header nav .nav-logo {
+  width: 80px;
+  height: 80px;
+  border: 8px solid #000000c9;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.22);
 }
 
-nav .nav-logo img{
-    width: 100%;
+nav .nav-logo img {
+  width: 100%;
 }
 
-nav .nav-links li{
-    display: inline-block;
-    padding: 0 10px;
-    list-style: none;
-    transition: color 0.4s;
+nav .nav-links li {
+  display: inline-block;
+  padding: 0 10px;
+  list-style: none;
+  transition: color 0.4s;
 }
 
 nav .nav-links li a {
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 600;
-    color: #000000c9;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000000c9;
 }
 
-nav .nav-links li:hover a{
-    color: #bedf92;
+nav .nav-links li:hover a {
+  color: #bedf92;
 }
 
-.toll-line{
-    display: flex;
-    align-items: center;
-    line-height: 15px;
-    font-size: 12px;
-    color: #000000c9;
-    transition: color 0.4s;
-    cursor: pointer;
+.toll-line {
+  display: flex;
+  align-items: center;
+  line-height: 15px;
+  font-size: 12px;
+  color: #000000c9;
+  transition: color 0.4s;
+  cursor: pointer;
 }
 
-.toll-line .fa-phone-volume{
-    margin-right: 8px;
-    font-size: 18px;
-    
+.toll-line .fa-phone-volume {
+  margin-right: 8px;
+  font-size: 18px;
 }
 
-.toll-line:hover{
-    color: #bedf92;
+.toll-line:hover {
+  color: #bedf92;
 }
 
 .header button {
-    padding: 10px 20px;
-    border-radius: 4px;
-    outline: 0;
-    border: 0;
-    background: #000000c9;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 4px;
+  outline: 0;
+  border: 0;
+  background: #000000c9;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-.header .signin-btn{
-    background: transparent;
-    border: 1px solid #000000c9;
-    color: #000000c9;
-    border-radius: 4px;
+.header .signin-btn {
+  background: transparent;
+  border: 1px solid #000000c9;
+  color: #000000c9;
+  border-radius: 4px;
 }
 
 /* --------------------------------------------HEADER INTRODUCTION SECTION------------------------------------------------------ */
-.introduction{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    padding: 0 8%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.introduction {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 8%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.introduction .head-img{
-    flex-basis: 800px;
-    padding: 40px 8%;
-    transform: translate(2.5);
+.introduction .head-img {
+  flex-basis: 800px;
+  padding: 40px 8%;
+  transform: translate(2.5);
 }
 
 .introduction .head-img img {
-    width: 100%;
-    height: fit-content;
-    margin: auto;
-    
+  width: 100%;
+  height: fit-content;
+  margin: auto;
 }
-.introduction .intro-text{
-    flex: 1;
-}
-
-.introduction .intro-text h1{
-    font-size: 35px;
-    color: #fff;
-    /* width: 750px; */
+.introduction .intro-text {
+  flex: 1;
 }
 
-.introduction .intro-text h1 span{
-    font-size: 80px;
-    color: #0059ff;
-    font-weight: 600;
-    font-family: 'Roboto', sans-serif;
-}
-.introduction .intro-text p{
-    font-size: 25px;
-    color: #eef1f5;
-    margin-top: 20px;
-    font-weight: 500;
+.introduction .intro-text h1 {
+  font-size: 35px;
+  color: #fff;
+  /* width: 750px; */
 }
 
-.introduction .contact_form{
-    max-width:800px;
-    width: 600px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.4)50%, rgba(0, 0, 0, 0.4)50%);
-    padding: 5px 8px;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-top: 100px;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    padding: 30px;
+.introduction .intro-text h1 span {
+  font-size: 80px;
+  color: #0059ff;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+.introduction .intro-text p {
+  font-size: 25px;
+  color: #eef1f5;
+  margin-top: 20px;
+  font-weight: 500;
 }
 
-.contact_form label{
-    color: #fff;
-    text-align: left;
+.introduction .contact_form {
+  max-width: 800px;
+  width: 600px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.4) 50%
+  );
+  padding: 5px 8px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 100px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 30px;
 }
 
-.contact_form h2{
-    color: #fff;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-.contact_form input{
-    width: 100%;
-    padding: 10px 10px;
-    border: 0;
-    outline: 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3)60%, rgba(255, 255, 255, 0.3)60%);
-    color: #fff;
-    font-weight: 500;
+.contact_form label {
+  color: #fff;
+  text-align: left;
 }
 
-.contact_form input:focus, .contact_form textarea:focus {
-    border: 1px solid #fff;
-    transform: all 0.14s ease;
+.contact_form h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.contact_form input {
+  width: 100%;
+  padding: 10px 10px;
+  border: 0;
+  outline: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3) 60%,
+    rgba(255, 255, 255, 0.3) 60%
+  );
+  color: #fff;
+  font-weight: 500;
 }
 
-.contact_form input::placeholder, .contact_form textarea::placeholder{
-    color: #fff;
-    font-weight: 500;
-    font-size: 15px;
+.contact_form input:focus,
+.contact_form textarea:focus {
+  border: 1px solid #fff;
+  transform: all 0.14s ease;
 }
 
-.contact_form textarea{
-    margin-top: 8px;
-    outline: 0;
-    border: 0;
-    border-radius: 5px;
-    padding: 10px 10px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3)60%, rgba(255, 255, 255, 0.3)60%);
-    color: #fff;
-    font-weight: 500;
-}
-
-.contact_form button {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7)50%, rgba(0, 0, 0, 0.7)50%);
-    cursor: pointer;
-    width: 50%;
-    margin: 10px 0;
-}
-
-.contact_form textarea{
-    width: 100%;
-    height: 250px;
+.contact_form input::placeholder,
+.contact_form textarea::placeholder {
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .contact_form textarea {
-    resize: none;
+  margin-top: 8px;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3) 60%,
+    rgba(255, 255, 255, 0.3) 60%
+  );
+  color: #fff;
+  font-weight: 500;
 }
 
+.contact_form button {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(0, 0, 0, 0.7) 50%
+  );
+  cursor: pointer;
+  width: 50%;
+  margin: 10px 0;
+}
+
+.contact_form textarea {
+  width: 100%;
+  height: 250px;
+}
+
+.contact_form textarea {
+  resize: none;
+}
 
 /* ---------------------------Booking Ticket------------------------- */
 
-.bookings{
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.22)50%, rgba(0, 0, 0, 0.22)50%), url(images/2020-volocity-side.png);
-    background-size: cover;
-    background-position: center;
-    padding: 0 8%;
-    position: relative;
-    float: left;
+.bookings {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.22) 50%, rgba(0, 0, 0, 0.22) 50%),
+    url(images/2020-volocity-side.png);
+  background-size: cover;
+  background-position: center;
+  padding: 0 8%;
+  position: relative;
+  float: left;
 }
 
-.bookings .bookings-wrapper{
-    width: 800px;
-    padding: 50px;
-    background-color: #000000c9;
-    position: absolute;
-    top: 20%;
-    border-radius: 0 40px 0 40px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.22);
+.bookings .bookings-wrapper {
+  width: 800px;
+  padding: 50px;
+  background-color: #000000c9;
+  position: absolute;
+  top: 20%;
+  border-radius: 0 40px 0 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.22);
 }
 
-.bookings .bookings-wrapper .bookingForm{
-    width: 100%;
-    padding: 10px;
+.bookings .bookings-wrapper .bookingForm {
+  width: 100%;
+  padding: 10px;
 }
 
-.bookings-wrapper .title{
-    margin: 20px auto;
-    font-size: 30px;
-    color: #fff;
-    border-bottom: 2px solid #eef1f5;
+.bookings-wrapper .title {
+  margin: 20px auto;
+  font-size: 30px;
+  color: #fff;
+  border-bottom: 2px solid #eef1f5;
 }
 
 .bookingForm form .input_field {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .bookingForm form .input_field label {
-    margin-right: 10px;
-    font-size: 14px;
-    font-weight: 500;
-    color: #fff;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
 }
 
-.bookingForm form .input_field input{
-    width: 45%;
-    outline: 0;
-    border: none;
-    padding: 10px;
-    margin: 2%;
-    display: inline-block;
+.bookingForm form .input_field input {
+  width: 45%;
+  outline: 0;
+  border: none;
+  padding: 10px;
+  margin: 2%;
+  display: inline-block;
 }
 
 /* .bookingForm form .input_field input:focus{
     border: 1px solid #bedf92;
 } */
 
-.bookingForm form .input_field .custom-select{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-start;
+.bookingForm form .input_field .custom-select {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
 }
-.bookingForm form .input_field .custom-select select{
-    padding: 10px;
-    outline: 0;
-    border: 0;
-    margin-right: 2%;
-}
-
-.bookingForm form .input_field .custom-select .first-select{
-    width: 100%;
-    margin-left: 8px;
+.bookingForm form .input_field .custom-select select {
+  padding: 10px;
+  outline: 0;
+  border: 0;
+  margin-right: 2%;
 }
 
-.bookingForm form .input_field .custom-select select option{
-    width: 800px;
+.input_field .custom-select .first-select {
+  width: 100%;
+  margin-left: 8px;
 }
 
-.custom-select button{
-    padding: 5px 9px;
-    margin: 2%;
-    border-radius: 3px;
-    border: 0;
-    outline: 0;
+.input_field .custom-select .air-departure {
+  max-width: 550px;
+  width: 100%;
+  margin: 0;
+}
+
+.bookingForm form .input_field .custom-select select option {
+  width: 800px;
+}
+
+.custom-select button {
+  padding: 5px 9px;
+  margin: 2%;
+  border-radius: 3px;
+  border: 0;
+  outline: 0;
 }
 
 .custom-select button a {
-    text-decoration: none;
-    font-size: 14px;
+  text-decoration: none;
+  font-size: 14px;
 }
 
-.input_field .custom-select .go-btn{
-    font-size: 18px;
-    padding: 8px 13px;
-    font-weight: 500;
+.input_field .custom-select .go-btn {
+  font-size: 18px;
+  padding: 8px 13px;
+  font-weight: 500;
 }
 
-.custom-select .fArilift {
-    width: 60%;
-    font-size: 14px;
-    font-weight: 600;
-    color: #fff;
-    margin-left: -50px;
+.input_field .custom-select [type="checkbox"] {
+  margin-left: -4%;
+  margin-right: -2%;
 }
 
-.custom-select input[type="chekbox"]{
-    width: 40px;
-    height: 40px;
-    background: #fff;
+.custom-select p {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  /* margin-left: -50px; */
 }
+
+/* .custom-select input[type="chekbox"] {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+} */
 
 form .reset-link {
-    color: #fff;
-    margin-top: 20px;
-
+  color: #fff;
+  margin-top: 20px;
 }
