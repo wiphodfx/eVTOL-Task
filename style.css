@@ -253,7 +253,6 @@ nav .nav-links li:hover a {
   margin: auto;
   height: 300px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid #bbb;
 }
@@ -264,8 +263,20 @@ nav .nav-links li:hover a {
   margin: 20px 0;
 }
 
+.flight-gallery .flight-col {
+  display: flex;
+  align-items: center;
+}
 .row-gallery .flight-col img {
   width: 80%;
+}
+
+.flight_desc p {
+  line-height: 40px;
+}
+.flight_desc h3 {
+  font-size: 40px;
+  margin-bottom: 30px;
 }
 
 /* ---------------------------Booking Ticket------------------------- */
